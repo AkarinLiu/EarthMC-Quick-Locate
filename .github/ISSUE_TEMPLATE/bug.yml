@@ -7,14 +7,12 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: ""
   - type: textarea
     id: what-happened
     attributes:
       label: 发生了什么？
       description: 请描述您的问题。
       placeholder: 请告诉我，我会核实的！
-      value: ""
   - type: dropdown
     id: version
     attributes:
