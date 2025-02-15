@@ -5,14 +5,13 @@ labels: ["BUG", "未核实"]
 assignees:
   - AkarinLiu
 body:
-  - type: markdown
-    attributes:
   - type: textarea
     id: what-happened
     attributes:
       label: 发生了什么？
       description: 请描述您的问题。
       placeholder: 请告诉我，我会核实的！
+      value: "1"
   - type: dropdown
     id: version
     attributes:
