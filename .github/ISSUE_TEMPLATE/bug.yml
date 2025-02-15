@@ -12,6 +12,9 @@ body:
       description: 请描述您的问题。
       placeholder: 请告诉我，我会核实的！
       value: "1"
+    validations:
+      required: true
+
   - type: dropdown
     id: version
     attributes:
@@ -24,6 +27,7 @@ body:
       default: 0
     validations:
       required: true
+
   - type: dropdown
     id: scripts-manager
     attributes:
@@ -33,6 +37,8 @@ body:
         - 篡改猴
         - 暴力猴
         - 脚本猫
+    validations:
+      required: true
 
   - type: dropdown
     id: browsers
@@ -44,10 +50,13 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+
   - type: textarea
     id: logs
     attributes:
       label: 脚本日志
       description: 请打开浏览器开发人员工具的控制台，并复制日志到文本框。
       render: shell
+    validations:
+      required: true
 
