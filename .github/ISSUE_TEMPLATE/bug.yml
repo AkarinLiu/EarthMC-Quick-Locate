@@ -1,0 +1,61 @@
+name: Bug
+description: 发现 Bug？ 立即上报！
+title: "[BUG]: "
+labels: ["BUG", "未核实"]
+assignees:
+  - AkarinLiu
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您提交 Bug！尽管代码是个草台班子，但是您的 Bug 报告会增强代码的鲁棒性。
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么？
+      description: 请描述您的问题。
+      placeholder: 请告诉我，我会核实的！
+      value: ""
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: 版本
+      description: 我当前使用的脚本的版本号是：
+      options:
+        - 2025.3.2
+        - 2025.3.0
+        - 2025.2.0
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: scripts-manager
+    attributes:
+      label: 我当前使用的脚本管理器是：
+      multiple: true
+      options:
+        - 篡改猴
+        - 暴力猴
+        - 脚本猫
+    vaildations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 我当前使用的浏览器是：
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脚本日志
+      description: 请打开浏览器开发人员工具的控制台，并复制日志到文本框。
+      render: shell
+    vaildations:
+      required: true
