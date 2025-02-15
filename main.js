@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         EarthMC 地图快速定位
-// @version      2025.5
+// @version      2025.2
 // @description  始终可用的坐标定位面板，支持参数覆盖和即时更新
 // @author       AkarinLiu
 // @match        https://map.earthmc.net/*
