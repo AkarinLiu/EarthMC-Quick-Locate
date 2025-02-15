@@ -104,3 +104,7 @@
 
 本项目采用 [Apache 2.0 许可证](LICENSE)。  
 请自由使用、修改和分发代码，但需保留原作者信息。
+
+## 鸣谢
+
+[DeepSeek 深度求索](https://deepseek.com)
