@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name         EarthMC 地图快速定位
-// @version      2025.5
+// @version      2025.3.1
+// @updateURL    https://cdn.jsdelivr.net/gh/AkarinLiu/EarthMC-Quick-Locate@master/main.user.js
+// @downloadURL  https://cdn.jsdelivr.net/gh/AkarinLiu/EarthMC-Quick-Locate@master/main.user.js
 // @description  始终可用的坐标定位面板，支持参数覆盖和即时更新
 // @author       AkarinLiu
 // @match        https://map.earthmc.net/*
@@ -64,6 +66,49 @@
         }
     `);
 
+    const createPanel = () => {
+        const panel = document.createElement('div');
+        panel.className = 'earthmc-locator';
+
+        const title = document.createElement('h3');
+        title.className = 'locator-title';
+        title.innerHTML = '&#128506; 坐标定位'; // 使用HTML实体代替表情符号
+
+        const coordGroup = document.createElement('div');
+        coordGroup.className = 'coord-group';
+
+        const inputX = document.createElement('input');
+        inputX.type = 'number';
+        inputX.className = 'coord-input';
+        inputX.id = 'mcX';
+        inputX.placeholder = 'X 坐标';
+        inputX.step = 'any';
+
+        const inputZ = document.createElement('input');
+        inputZ.type = 'number';
+        inputZ.className = 'coord-input';
+        inputZ.id = 'mcZ';
+        inputZ.placeholder = 'Z 坐标';
+        inputZ.step = 'any';
+
+        const button = document.createElement('button');
+        button.className = 'locator-button';
+        button.id = 'mcLocate';
+        button.textContent = '立即定位';
+
+        // 层级组装
+        coordGroup.appendChild(inputX);
+        coordGroup.appendChild(inputZ);
+        panel.appendChild(title);
+        panel.appendChild(coordGroup);
+        panel.appendChild(button);
+
+        return panel;
+    };
+
+    // 插入到页面
+    const panel = createPanel();
+    document.body.appendChild(panel);
     // 创建定位面板
     const panel = document.createElement('div');
     panel.className = 'earthmc-locator';

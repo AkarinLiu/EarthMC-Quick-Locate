@@ -30,11 +30,9 @@
 
 ## 安装与使用
 
-### 安装步骤
-1. 确保已安装浏览器脚本管理器（如 [Tampermonkey](https://www.tampermonkey.net/) 或 [Violentmonkey](https://violentmonkey.github.io/)）。
-2. 创建一个新脚本，将代码粘贴到编辑器中。
-3. 保存并启用脚本。
-
+| GitHub | JSdelivr |
+| ---- | ---- |
+| [点击安装](https://github.com/AkarinLiu/EarthMC-Quick-Locate/raw/refs/heads/master/main.user.js) | [点击安装](https://cdn.jsdelivr.net/gh/AkarinLiu/EarthMC-Quick-Locate@master/main.user.js) |
 ### 使用方法
 1. 访问 [EarthMC 地图](https://map.earthmc.net/)。
 2. 在页面右上角找到定位面板。
