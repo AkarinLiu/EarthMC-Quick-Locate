@@ -7,8 +7,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
-        感谢您提交 Bug！尽管代码是个草台班子，但是您的 Bug 报告会增强代码的鲁棒性。
+      value: ""
   - type: textarea
     id: what-happened
     attributes:
@@ -16,8 +15,6 @@ body:
       description: 请描述您的问题。
       placeholder: 请告诉我，我会核实的！
       value: ""
-    validations:
-      required: true
   - type: dropdown
     id: version
     attributes:
@@ -39,8 +36,7 @@ body:
         - 篡改猴
         - 暴力猴
         - 脚本猫
-    vaildations:
-      required: true
+
   - type: dropdown
     id: browsers
     attributes:
@@ -57,5 +53,4 @@ body:
       label: 脚本日志
       description: 请打开浏览器开发人员工具的控制台，并复制日志到文本框。
       render: shell
-    vaildations:
-      required: true
+
