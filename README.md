@@ -97,7 +97,6 @@
 ## 贡献与反馈
 
 欢迎提交 Issue 或 Pull Request 改进脚本！  
-如有问题或建议，请联系：[YourEmail@example.com]
 
 ---
 
