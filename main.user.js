@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name                    EarthMC 地图快速定位
-// @version                 2025.3.3
-// @updateURL          https://cdn.jsdelivr.net/gh/AkarinLiu/EarthMC-Quick-Locate@master/main.user.js
-// @downloadURL     https://cdn.jsdelivr.net/gh/AkarinLiu/EarthMC-Quick-Locate@master/main.user.js
-// @namespace          https://github.com/AkarinLiu
-// @homepage           https://github.com/AkarinLiu/EarthMC-Quick-Locate
-// @supportURL        https://github.com/AkarinLiu/EarthMC-Quick-Locate/issues/new
-// @description         始终可用的坐标定位面板，支持参数覆盖和即时更新
-// @author                 AkarinLiu
-// @match                  https://map.earthmc.net/*
-// @icon                     https://map.earthmc.net/favicon.ico
-// @grant                   GM_addStyle
+// @name EarthMC 地图快速定位
+// @version 2025.3.3
+// @updateURL https://cdn.jsdelivr.net/gh/AkarinLiu/EarthMC-Quick-Locate@master/main.user.js
+// @downloadURL https://cdn.jsdelivr.net/gh/AkarinLiu/EarthMC-Quick-Locate@master/main.user.js
+// @namespace https://github.com/AkarinLiu
+// @homepage https://github.com/AkarinLiu/EarthMC-Quick-Locate
+// @supportURL https://github.com/AkarinLiu/EarthMC-Quick-Locate/issues/new
+// @description 始终可用的坐标定位面板，支持参数覆盖和即时更新
+// @author AkarinLiu
+// @match https://map.earthmc.net/*
+// @icon https://map.earthmc.net/favicon.ico
+// @grant GM_addStyle
 // ==/UserScript==
 
 (function() {
